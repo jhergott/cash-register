@@ -1,7 +1,11 @@
 /*
  HELLO CHANGE
  
- At Rocketmiles, our team loves travelling. However, many places we travel don’t accept our credit cards, and we have to remember to bring dollar bills with us. We’ve had to correct a few vendors about giving us the correct change from their cash registers, sometimes we get too much and sometimes we get too little. Create a cash register that should be able to accept only $20, $10, $5, $2 and $1 bills. Given the charge and amount of money received return the change in each denomination that should be given from the cash register. Sometimes when the vendors couldn’t make exact change they would tell us they couldn’t make exact change.
+ At Rocketmiles, our team loves travelling. However, many places we travel don’t accept our credit cards, and we have to remember to 
+ bring dollar bills with us. We’ve had to correct a few vendors about giving us the correct change from their cash registers, sometimes 
+ we get too much and sometimes we get too little. Create a cash register that should be able to accept only $20, $10, $5, $2 and $1
+ bills. Given the charge and amount of money received return the change in each denomination that should be given from the cash register. 
+ Sometimes when the vendors couldn’t make exact change they would tell us they couldn’t make exact change.
  */
 
 import Foundation
@@ -48,6 +52,7 @@ struct CashRegister {
         return bills
     }
     
+    // getChange returns an array of bills that make correct change or nil if there is no change solution.
     func getChange(changeValue: CashValue) -> [Bill]? {
         // makeChangeTable will hold the change solution for each CashValue up to the changeValue we're looking for.
         // A nil solution (or empty) means we cannot make change for that CashValue.
